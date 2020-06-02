@@ -1,0 +1,110 @@
+body{
+    width: 100vw;
+    height:100vh;
+    margin: 0;
+    background-color:#0bff348c;
+    font-family: sans-serif;
+}
+:root{
+    --my-color: cornflowerblue;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#app{
+    width: 80%;
+    height:inherit;
+    margin:auto;
+    background-color: aliceblue;
+    border-radius: 50px;
+    /* border: 2px solid black; */
+}
+#header{
+    width: 100%;
+    height: 15vh;
+    font-size: 2rem;
+    margin: auto;
+    font-weight: bolder;
+    /* border: 2px solid black; */
+}
+#header>span{
+    margin: 10px;
+    color: var(--my-color);
+}
+#app-body{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+#contact-list-section{
+    width: 50%;
+    height: inherit;
+    border-radius: 50px;
+    overflow: scroll;
+    /* border: 2px solid black; */
+}
+#contact-list-section::-webkit-scrollbar{
+    display: none;
+}
+#contact-list{
+    width: 90%;
+    height: auto;
+    list-style-type: none;
+    /* border: 2px solid rgb(88, 20, 20); */
+}
+.list-item{
+    width: 100%;
+    height: 70px;
+    margin: 10px;
+    margin-left: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid mediumaquamarine;
+    /* border: 2px solid black; */
+}
+.list-item>span{
+    font-size: 1.3rem;
+    color: var(--my-color);
+}
+.trash-logo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: var(--my-color);
+    font-size: 1.3rem;
+}
+.trash-logo:hover{
+    box-shadow: 0 0 10px 3px skyblue;
+}
+#contact-form{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.input-item{
+    width: 275px;
+    height: 50px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border: none;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: aqua;
+    transition: all ease-in-out 0.2s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
